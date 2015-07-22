@@ -1,30 +1,26 @@
 //
-//  MainViewController.swift
+//  MedalViewController.swift
 //  ForRunning
 //
-//  Created by He Zitong on 15/7/6.
+//  Created by He Zitong on 15/7/22.
 //  Copyright (c) 2015年 He Zitong. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-class MainViewController: UIViewController {
-    var gradientLayer:CAGradientLayer?
+class MedalViewController: HZTGradientViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        //hide navigation bar
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        //add gradient view
-        var gradientView = HZTGradientView(fatherViewCtrl: self)
-        self.view.addSubview(gradientView)
+        self.title = "Medal"
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+
     /*
     // MARK: - Navigation
 

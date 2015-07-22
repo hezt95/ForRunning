@@ -12,16 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
-        let mainCtrl = MainViewController()
-        let navCtrl = UINavigationController(rootViewController: mainCtrl)
-        self.window!.rootViewController = navCtrl
+        
+        //init VCs
+        let todayViewCtrl = TodayViewController()
+        let totalViewCtrl = TotalViewController()
+        let medalViewCtrl = MedalViewController()
+        let youViewCtrl = YouViewController()
+        let tabBarCtrl = HZTTabBarController()
+        self.window!.rootViewController = tabBarCtrl
+        tabBarCtrl.viewControllers = [todayViewCtrl, totalViewCtrl, medalViewCtrl, youViewCtrl]
+        
+        //TabBar's Settings
+        tabBarCtrl.tabBar.barTintColor = UIColor.tabBarColor()
+        tabBarCtrl.tabBar.tintColor = UIColor.tabBarSelectedColor()
         return true
     }
 

@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8863C7EA971487D9A9E68E89 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1863FB779F0294E0097FA7A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B92213D81B5F68F600DC2044 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213D71B5F68F600DC2044 /* TodayViewController.swift */; };
+		B92213DA1B5F695500DC2044 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213D91B5F695500DC2044 /* TotalViewController.swift */; };
+		B92213DC1B5F696400DC2044 /* MedalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213DB1B5F696400DC2044 /* MedalViewController.swift */; };
+		B92213DE1B5F697200DC2044 /* YouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213DD1B5F697200DC2044 /* YouViewController.swift */; };
+		B92213E41B5F76E200DC2044 /* HZTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */; };
+		B92213E61B5F892500DC2044 /* HZTGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213E51B5F892500DC2044 /* HZTGradientViewController.swift */; };
+		B92213EA1B5FB4CF00DC2044 /* HZTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213E91B5FB4CF00DC2044 /* HZTColor.swift */; };
+		B92213EC1B5FCF3700DC2044 /* HZTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213EB1B5FCF3700DC2044 /* HZTTabBarController.swift */; };
 		B93F94631B4AAABC001F60DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F94621B4AAABC001F60DD /* AppDelegate.swift */; };
 		B93F946A1B4AAABC001F60DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93F94691B4AAABC001F60DD /* Images.xcassets */; };
 		B93F946D1B4AAABC001F60DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93F946B1B4AAABC001F60DD /* LaunchScreen.xib */; };
 		B93F94791B4AAABC001F60DD /* ForRunningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F94781B4AAABC001F60DD /* ForRunningTests.swift */; };
-		B93F948B1B4AB9D2001F60DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F948A1B4AB9D1001F60DD /* MainViewController.swift */; };
-		B9CE961B1B5E1584004797F9 /* HZTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CE961A1B5E1584004797F9 /* HZTGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 /* Begin PBXFileReference section */
 		0D8E56225794FE01FB90F11F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3AED0A0CABE76E17AD50ED2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B92213D71B5F68F600DC2044 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B92213D91B5F695500DC2044 /* TotalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		B92213DB1B5F696400DC2044 /* MedalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalViewController.swift; sourceTree = "<group>"; };
+		B92213DD1B5F697200DC2044 /* YouViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouViewController.swift; sourceTree = "<group>"; };
+		B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTitleLabel.swift; sourceTree = "<group>"; };
+		B92213E51B5F892500DC2044 /* HZTGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTGradientViewController.swift; sourceTree = "<group>"; };
+		B92213E91B5FB4CF00DC2044 /* HZTColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTColor.swift; sourceTree = "<group>"; };
+		B92213EB1B5FCF3700DC2044 /* HZTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarController.swift; sourceTree = "<group>"; };
 		B93F945D1B4AAABC001F60DD /* ForRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93F94611B4AAABC001F60DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B93F94621B4AAABC001F60DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +52,6 @@
 		B93F94771B4AAABC001F60DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B93F94781B4AAABC001F60DD /* ForRunningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForRunningTests.swift; sourceTree = "<group>"; };
 		B93F94861B4AB53A001F60DD /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
-		B93F948A1B4AB9D1001F60DD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		B9CE961A1B5E1584004797F9 /* HZTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTGradientView.swift; sourceTree = "<group>"; };
 		E1863FB779F0294E0097FA7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +83,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B92213DF1B5F6AEA00DC2044 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B92213EB1B5FCF3700DC2044 /* HZTTabBarController.swift */,
+				B92213E51B5F892500DC2044 /* HZTGradientViewController.swift */,
+				B92213D71B5F68F600DC2044 /* TodayViewController.swift */,
+				B92213D91B5F695500DC2044 /* TotalViewController.swift */,
+				B92213DB1B5F696400DC2044 /* MedalViewController.swift */,
+				B92213DD1B5F697200DC2044 /* YouViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B92213E01B5F6B4B00DC2044 /* Views and Colors */ = {
+			isa = PBXGroup;
+			children = (
+				B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */,
+				B92213E91B5FB4CF00DC2044 /* HZTColor.swift */,
+			);
+			name = "Views and Colors";
+			sourceTree = "<group>";
+		};
 		B93F94541B4AAABC001F60DD = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				B93F94621B4AAABC001F60DD /* AppDelegate.swift */,
-				B93F948A1B4AB9D1001F60DD /* MainViewController.swift */,
-				B9CE961A1B5E1584004797F9 /* HZTGradientView.swift */,
+				B92213E01B5F6B4B00DC2044 /* Views and Colors */,
+				B92213DF1B5F6AEA00DC2044 /* ViewControllers */,
 				B93F94691B4AAABC001F60DD /* Images.xcassets */,
 				B93F946B1B4AAABC001F60DD /* LaunchScreen.xib */,
 				B93F94601B4AAABC001F60DD /* Supporting Files */,
@@ -289,8 +323,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B93F94631B4AAABC001F60DD /* AppDelegate.swift in Sources */,
-				B9CE961B1B5E1584004797F9 /* HZTGradientView.swift in Sources */,
-				B93F948B1B4AB9D2001F60DD /* MainViewController.swift in Sources */,
+				B92213DC1B5F696400DC2044 /* MedalViewController.swift in Sources */,
+				B92213D81B5F68F600DC2044 /* TodayViewController.swift in Sources */,
+				B92213EC1B5FCF3700DC2044 /* HZTTabBarController.swift in Sources */,
+				B92213DE1B5F697200DC2044 /* YouViewController.swift in Sources */,
+				B92213E61B5F892500DC2044 /* HZTGradientViewController.swift in Sources */,
+				B92213E41B5F76E200DC2044 /* HZTTitleLabel.swift in Sources */,
+				B92213EA1B5FB4CF00DC2044 /* HZTColor.swift in Sources */,
+				B92213DA1B5F695500DC2044 /* TotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
