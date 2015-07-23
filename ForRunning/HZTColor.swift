@@ -14,7 +14,7 @@ extension UIColor {
         return UIColor(red: 254.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1.0)
     }
     class func tabBarSelectedColor() -> UIColor {
-        return UIColor(red: 252.0/255.0, green: 32.0/32.0, blue: 32.0/32.0, alpha: 1.0)
+        return UIColor(red: 252.0/255.0, green: 32.0/255.0, blue: 32.0/255.0, alpha: 1.0)
     }
     class func topGradientColor() -> UIColor {
         return UIColor(red: 218.0/255.0, green: 67.0/255.0, blue: 67.0/255.0, alpha: 1.0)

@@ -1,18 +1,19 @@
 //
-//  YouViewController.swift
+//  MeViewController.swift
 //  ForRunning
 //
-//  Created by He Zitong on 15/7/22.
+//  Created by He Zitong on 15/7/23.
 //  Copyright (c) 2015年 He Zitong. All rights reserved.
 //
 
 import UIKit
 
-class YouViewController: HZTGradientViewController {
+class MeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "You"
+        self.title = "Me"
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

@@ -18,7 +18,7 @@ class HZTGradientViewController: UIViewController {
         self.view.addSubview(self.gradientView!)
         self.gradientView!.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(self.view)
-            make.bottom.equalTo(self.view)
+            make.bottom.equalTo(self.view).offset(-49)
             make.left.equalTo(self.view)
             make.right.equalTo(self.view)
         }

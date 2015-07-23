@@ -14,12 +14,12 @@ class TodayViewController: HZTGradientViewController {
         super.viewDidLoad()
         self.title = "Today"
         //Bezier
-        var bezierContext = UIGraphicsGetCurrentContext()
-        
-        CGContextSetRGBStrokeColor(bezierContext, 1, 1, 1, 1.0)
-        CGContextSetLineWidth(bezierContext, 1.0)
-        CGContextDrawPath(bezierContext, kCGPathStroke)
-        
+//        var bezierContext = UIGraphicsGetCurrentContext()
+//        
+//        CGContextSetRGBStrokeColor(bezierContext, 1, 1, 1, 1.0)
+//        CGContextSetLineWidth(bezierContext, 1.0)
+//        CGContextDrawPath(bezierContext, kCGPathStroke)
+//        
         
     }
     

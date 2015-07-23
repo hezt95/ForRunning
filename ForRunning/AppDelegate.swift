@@ -24,14 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let todayViewCtrl = TodayViewController()
         let totalViewCtrl = TotalViewController()
         let medalViewCtrl = MedalViewController()
-        let youViewCtrl = YouViewController()
+        let meViewCtrl = MeViewController()
         let tabBarCtrl = HZTTabBarController()
         self.window!.rootViewController = tabBarCtrl
-        tabBarCtrl.viewControllers = [todayViewCtrl, totalViewCtrl, medalViewCtrl, youViewCtrl]
-        
-        //TabBar's Settings
-        tabBarCtrl.tabBar.barTintColor = UIColor.tabBarColor()
-        tabBarCtrl.tabBar.tintColor = UIColor.tabBarSelectedColor()
+        tabBarCtrl.viewControllers = [todayViewCtrl,totalViewCtrl,medalViewCtrl,meViewCtrl]
         return true
     }
 
