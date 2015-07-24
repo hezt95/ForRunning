@@ -13,13 +13,14 @@ class TodayViewController: HZTGradientViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Today"
+        let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
         //Bezier
 //        var bezierContext = UIGraphicsGetCurrentContext()
 //        
 //        CGContextSetRGBStrokeColor(bezierContext, 1, 1, 1, 1.0)
 //        CGContextSetLineWidth(bezierContext, 1.0)
 //        CGContextDrawPath(bezierContext, kCGPathStroke)
-//        
+//
         
     }
     

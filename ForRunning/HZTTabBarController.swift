@@ -10,9 +10,11 @@ import UIKit
 import SnapKit
 
 class HZTTabBarController: UITabBarController {
-    var tabBarView:UIView?
-    var tabBarBtn:[UIButton]?
-    var tabBarTitle:[UILabel]?
+    var tabBarView: UIView?
+    var tabBarBtn: [HZTTabBarButton]?
+    var selectedTabBarBtn: HZTTabBarButton?
+    var tabBarTitle: [UILabel]?
+    var tabBarIcon: [UIImage]?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBar.hidden = true
@@ -28,22 +30,26 @@ class HZTTabBarController: UITabBarController {
         println("TabBar view frame: " + String(stringInterpolationSegment: self.tabBarView!.frame))
         
         //init 4 TabBar btn
-        self.tabBarBtn = [UIButton]()
+        self.tabBarBtn = [HZTTabBarButton]()
         self.tabBarTitle = [UILabel]()
-        let titleBottomPadding = -5
+        self.tabBarIcon = [UIImage]()
+        let titleBottomPadding = -2
         let vcCounts = 4
         for var index = 0; index < vcCounts; index++ {
-            var tabBarBtn = UIButton()
+            var tabBarBtn = HZTTabBarButton()
             self.tabBarBtn!.append(tabBarBtn)
             self.tabBarView!.addSubview(self.tabBarBtn![index])
             
             var tabBarTitle = UILabel()
             self.tabBarTitle!.append(tabBarTitle)
             self.tabBarView!.addSubview(self.tabBarTitle![index])
+            
+            var tabBarIcon = UIImage()
+            self.tabBarIcon!.append(tabBarIcon)
         }
         
-        //attention:the tabBarBtn[] below is self.tabBarBtn[]; tabBarView is self.tabBarView tabBarTitle is self.tabBarTitle
-        //autolayout:TabBarBtn and TabBarTitle
+        //attention:the tabBarBtn[] below is self.tabBarBtn[]; tabBarView is self.tabBarView tabBarTitle is self.tabBarTitle tabBarIcon is self.tabBarIcon
+        //autolayout:TabBarBtn and TabBarTitl
         for var index = 0; index < vcCounts; index++ {
             switch index {
             case 0:
@@ -68,7 +74,6 @@ class HZTTabBarController: UITabBarController {
                         }
                     }
                 }
-                println("TabBar btn index: \(index)")
             case 1...(vcCounts - 2):
                 tabBarBtn![index].snp_makeConstraints{ (make) -> Void in
                     make.top.equalTo(tabBarView!)
@@ -91,7 +96,6 @@ class HZTTabBarController: UITabBarController {
                         }
                     }
                 }
-                println("TabBar btn index: \(index)")
             case vcCounts - 1:
                 tabBarBtn![index].snp_makeConstraints{ (make) -> Void in
                     make.top.equalTo(tabBarView!)
@@ -114,38 +118,72 @@ class HZTTabBarController: UITabBarController {
                         }
                     }
                 }
-                println("TabBar btn index: \(index)")
                 
             default:
                 fatalError("Wrong index")
             }
         }
         
-        println("TabBar btn count: " + String(stringInterpolationSegment:self.tabBarBtn!.count))
         //configure the TabBarBtn and TabBarTitle
+        //set TabBarBtn's image
         for var index = 0; index < vcCounts; index++ {
-            //TabBarTitle
+            //TabBarTitle and TabBarBtn's image
             switch index {
             case 0:
+                tabBarIcon![index] = UIImage(named: "Today.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+                tabBarBtn![index].tintColor = UIColor.tabBarSelectedColor()
                 tabBarTitle![index].text = "Today"
                 tabBarTitle![index].textColor = UIColor.tabBarSelectedColor()
             case 1:
+                tabBarIcon![index] = UIImage(named: "Total.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+                tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
                 tabBarTitle![index].text = "Total"
                 tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
             case vcCounts - 2:
+                tabBarIcon![index] = UIImage(named: "Medal.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+                tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
                 tabBarTitle![index].text = "Medal"
                 tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
             case vcCounts - 1:
+                tabBarIcon![index] = UIImage(named: "Me.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+                tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
                 tabBarTitle![index].text = "Me"
                 tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
             default:
                 fatalError("Wrong index")
             }
+            tabBarBtn![index].setImage(tabBarIcon![index], forState: UIControlState.Selected)
+            tabBarBtn![index].setImage(tabBarIcon![index], forState: UIControlState.Normal)
+            tabBarBtn![index].addTarget(self, action: Selector("touchTabBarBtn:"), forControlEvents: UIControlEvents.TouchDown)
+            tabBarBtn![index].tag = index
+            if index == 0 {
+                selectedTabBarBtn = tabBarBtn![index]
+                selectedTabBarBtn!.selected = true
+            }
+            //cancell the Highlighted of btn
+            tabBarBtn![index].adjustsImageWhenHighlighted = false
+            //setting tabBarTitle
             tabBarTitle![index].textAlignment = NSTextAlignment.Center
             tabBarTitle![index].font = UIFont(name: "Helvetica", size: 8)
+            
         }
     }
     
+    func touchTabBarBtn(button: HZTTabBarButton) {
+        selectedIndex = button.tag
+        let vcCounts = 4
+        selectedTabBarBtn!.selected = false
+        selectedTabBarBtn = tabBarBtn![selectedIndex]
+        for var index = 0; index < vcCounts; index++ {
+            if index == selectedIndex {
+                tabBarBtn![index].tintColor = UIColor.tabBarSelectedColor()
+                tabBarTitle![index].textColor = UIColor.tabBarSelectedColor()
+            } else {
+                tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
+                tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

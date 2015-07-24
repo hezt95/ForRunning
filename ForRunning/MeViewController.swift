@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
+class MeViewController: HZTGradientViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Me"
+        let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
         // Do any additional setup after loading the view.
     }
 

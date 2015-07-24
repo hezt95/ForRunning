@@ -9,7 +9,7 @@
 import UIKit
 
 class HZTTitleLabel: UILabel {
-    init(fatherView:UIView){
+    init(fatherView: UIView, title: String){
         //super init first(all 0)
         super.init(frame: CGRectMake(0, 0, 0, 0))
         fatherView.addSubview(self)
@@ -19,7 +19,7 @@ class HZTTitleLabel: UILabel {
             make.centerX.equalTo(fatherView)
         }
         //set text
-        self.text = "Total"
+        self.text = title
         self.textColor! = UIColor.whiteColor()
     }
     

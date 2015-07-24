@@ -13,6 +13,7 @@ class MedalViewController: HZTGradientViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Medal"
+        let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
     }
 
     override func didReceiveMemoryWarning() {
