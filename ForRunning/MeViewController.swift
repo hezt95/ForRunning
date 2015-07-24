@@ -12,7 +12,7 @@ class MeViewController: HZTGradientViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Me"
+        self.title = vcTitle[ViewCtrl.Me.rawValue]
         let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
         // Do any additional setup after loading the view.
     }

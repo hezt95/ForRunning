@@ -9,10 +9,16 @@
 import UIKit
 import SnapKit
 
+//the ViewControllers(in this TabBarController container)'s titles and counts
+let vcTitle = ["Today", "Total", "Medal", "Me"]
+let vcCounts = 4
+enum ViewCtrl: Int {
+    case Today = 0, Total, Medal, Me
+}
+
 class HZTTabBarController: UITabBarController {
     var tabBarView: UIView?
     var tabBarBtn: [HZTTabBarButton]?
-    var selectedTabBarBtn: HZTTabBarButton?
     var tabBarTitle: [UILabel]?
     var tabBarIcon: [UIImage]?
     override func viewDidLoad() {
@@ -33,8 +39,6 @@ class HZTTabBarController: UITabBarController {
         self.tabBarBtn = [HZTTabBarButton]()
         self.tabBarTitle = [UILabel]()
         self.tabBarIcon = [UIImage]()
-        let titleBottomPadding = -2
-        let vcCounts = 4
         for var index = 0; index < vcCounts; index++ {
             var tabBarBtn = HZTTabBarButton()
             self.tabBarBtn!.append(tabBarBtn)
@@ -46,10 +50,12 @@ class HZTTabBarController: UITabBarController {
             
             var tabBarIcon = UIImage()
             self.tabBarIcon!.append(tabBarIcon)
+
         }
         
         //attention:the tabBarBtn[] below is self.tabBarBtn[]; tabBarView is self.tabBarView tabBarTitle is self.tabBarTitle tabBarIcon is self.tabBarIcon
         //autolayout:TabBarBtn and TabBarTitl
+        let titleBottomPadding = -2
         for var index = 0; index < vcCounts; index++ {
             switch index {
             case 0:
@@ -128,26 +134,23 @@ class HZTTabBarController: UITabBarController {
         //set TabBarBtn's image
         for var index = 0; index < vcCounts; index++ {
             //TabBarTitle and TabBarBtn's image
+            //setting content(icon image and title text)
+            tabBarIcon![index] = UIImage(named: "\(vcTitle[index]).png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            tabBarTitle![index].text = "\(vcTitle[index])"
+            
+            //setting TabBar's tint color
             switch index {
             case 0:
-                tabBarIcon![index] = UIImage(named: "Today.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
                 tabBarBtn![index].tintColor = UIColor.tabBarSelectedColor()
-                tabBarTitle![index].text = "Today"
                 tabBarTitle![index].textColor = UIColor.tabBarSelectedColor()
             case 1:
-                tabBarIcon![index] = UIImage(named: "Total.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
                 tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
-                tabBarTitle![index].text = "Total"
                 tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
             case vcCounts - 2:
-                tabBarIcon![index] = UIImage(named: "Medal.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
                 tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
-                tabBarTitle![index].text = "Medal"
                 tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
             case vcCounts - 1:
-                tabBarIcon![index] = UIImage(named: "Me.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
                 tabBarBtn![index].tintColor = UIColor.tabBarNormalColor()
-                tabBarTitle![index].text = "Me"
                 tabBarTitle![index].textColor = UIColor.tabBarNormalColor()
             default:
                 fatalError("Wrong index")
@@ -156,10 +159,7 @@ class HZTTabBarController: UITabBarController {
             tabBarBtn![index].setImage(tabBarIcon![index], forState: UIControlState.Normal)
             tabBarBtn![index].addTarget(self, action: Selector("touchTabBarBtn:"), forControlEvents: UIControlEvents.TouchDown)
             tabBarBtn![index].tag = index
-            if index == 0 {
-                selectedTabBarBtn = tabBarBtn![index]
-                selectedTabBarBtn!.selected = true
-            }
+            
             //cancell the Highlighted of btn
             tabBarBtn![index].adjustsImageWhenHighlighted = false
             //setting tabBarTitle
@@ -171,9 +171,6 @@ class HZTTabBarController: UITabBarController {
     
     func touchTabBarBtn(button: HZTTabBarButton) {
         selectedIndex = button.tag
-        let vcCounts = 4
-        selectedTabBarBtn!.selected = false
-        selectedTabBarBtn = tabBarBtn![selectedIndex]
         for var index = 0; index < vcCounts; index++ {
             if index == selectedIndex {
                 tabBarBtn![index].tintColor = UIColor.tabBarSelectedColor()

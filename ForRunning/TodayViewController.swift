@@ -12,7 +12,7 @@ import SnapKit
 class TodayViewController: HZTGradientViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Today"
+        self.title = vcTitle[ViewCtrl.Today.rawValue]
         let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
         //Bezier
 //        var bezierContext = UIGraphicsGetCurrentContext()

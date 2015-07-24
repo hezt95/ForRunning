@@ -12,7 +12,7 @@ class MedalViewController: HZTGradientViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Medal"
+        self.title = vcTitle[ViewCtrl.Medal.rawValue]
         let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
     }
 
