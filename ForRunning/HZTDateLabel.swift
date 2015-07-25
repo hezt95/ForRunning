@@ -1,33 +1,38 @@
 //
-//  HZTTitleLabel.swift
+//  HZTDateLabel.swift
 //  ForRunning
 //
-//  Created by He Zitong on 15/7/22.
+//  Created by He Zitong on 15/7/25.
 //  Copyright (c) 2015年 He Zitong. All rights reserved.
 //
 
 import UIKit
 
-class HZTTitleLabel: UILabel {
-    init(fatherView: UIView, title: String){
-        //super init first(all 0)
+class HZTDateLabel: UILabel {
+    
+    init(fatherView: UIView) {
         super.init(frame: CGRectMake(0, 0, 0, 0))
         fatherView.addSubview(self)
-        //autolayout
         self.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(fatherView).offset(35)
+            make.top.equalTo(fatherView).offset(58)
             make.centerX.equalTo(fatherView)
         }
-        //set text
-        self.text = title
-        self.font = UIFont(name: "BanglaSangamMN-Bold", size: 18)
-        self.textColor! = UIColor.whiteColor()
+        
+        let formatter = NSDateFormatter()
+        let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)
+        formatter.calendar = calendar
+        formatter.dateFormat = "EEEE, MMMM d"
+        let date = formatter.stringFromDate(NSDate())
+        
+        text = date
+        font = UIFont(name: "Avenir-Heavy", size: 9)
+        textColor = UIColor.dateLabelColor()
     }
-    
+
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

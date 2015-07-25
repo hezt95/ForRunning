@@ -14,6 +14,7 @@ class MeViewController: HZTGradientViewController {
         super.viewDidLoad()
         self.title = vcTitle[ViewCtrl.Me.rawValue]
         let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
+        let date = HZTDateLabel(fatherView: self.view)
         // Do any additional setup after loading the view.
     }
 

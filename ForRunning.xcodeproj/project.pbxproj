@@ -29,6 +29,9 @@
 		B95B928C1B6249590015BB80 /* Today@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95B92881B6249590015BB80 /* Today@3x.png */; };
 		B95B928D1B6249590015BB80 /* Total@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95B92891B6249590015BB80 /* Total@3x.png */; };
 		B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */; };
+		B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA271B637C20009903F0 /* HZTDateLabel.swift */; };
+		B98CAA2A1B63B321009903F0 /* HZTTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA291B63B321009903F0 /* HZTTabBarView.swift */; };
+		B98CAA2C1B63B382009903F0 /* HZTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA2B1B63B382009903F0 /* HZTGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		B95B92881B6249590015BB80 /* Today@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Today@3x.png"; sourceTree = "<group>"; };
 		B95B92891B6249590015BB80 /* Total@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Total@3x.png"; sourceTree = "<group>"; };
 		B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarButton.swift; sourceTree = "<group>"; };
+		B98CAA271B637C20009903F0 /* HZTDateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTDateLabel.swift; sourceTree = "<group>"; };
+		B98CAA291B63B321009903F0 /* HZTTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarView.swift; sourceTree = "<group>"; };
+		B98CAA2B1B63B382009903F0 /* HZTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTGradientView.swift; sourceTree = "<group>"; };
 		E1863FB779F0294E0097FA7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B92195031B63B838005930E4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */,
+				B92213E91B5FB4CF00DC2044 /* HZTColor.swift */,
+				B98CAA271B637C20009903F0 /* HZTDateLabel.swift */,
+				B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		B92213DF1B5F6AEA00DC2044 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +134,8 @@
 		B92213E01B5F6B4B00DC2044 /* Views and Colors */ = {
 			isa = PBXGroup;
 			children = (
-				B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */,
-				B92213E91B5FB4CF00DC2044 /* HZTColor.swift */,
-				B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */,
+				B98CAA291B63B321009903F0 /* HZTTabBarView.swift */,
+				B98CAA2B1B63B382009903F0 /* HZTGradientView.swift */,
 			);
 			name = "Views and Colors";
 			sourceTree = "<group>";
@@ -148,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				B93F94621B4AAABC001F60DD /* AppDelegate.swift */,
+				B92195031B63B838005930E4 /* Others */,
 				B92213E01B5F6B4B00DC2044 /* Views and Colors */,
 				B92213DF1B5F6AEA00DC2044 /* ViewControllers */,
 				B93F94691B4AAABC001F60DD /* Images.xcassets */,
@@ -367,11 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */,
+				B98CAA2C1B63B382009903F0 /* HZTGradientView.swift in Sources */,
+				B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */,
 				B92465591B613B0500AAC8EB /* MeViewController.swift in Sources */,
 				B93F94631B4AAABC001F60DD /* AppDelegate.swift in Sources */,
 				B92213DC1B5F696400DC2044 /* MedalViewController.swift in Sources */,
 				B92213D81B5F68F600DC2044 /* TodayViewController.swift in Sources */,
 				B92213EC1B5FCF3700DC2044 /* HZTTabBarController.swift in Sources */,
+				B98CAA2A1B63B321009903F0 /* HZTTabBarView.swift in Sources */,
 				B92213E61B5F892500DC2044 /* HZTGradientViewController.swift in Sources */,
 				B92213E41B5F76E200DC2044 /* HZTTitleLabel.swift in Sources */,
 				B92213EA1B5FB4CF00DC2044 /* HZTColor.swift in Sources */,

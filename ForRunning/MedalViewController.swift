@@ -14,6 +14,7 @@ class MedalViewController: HZTGradientViewController {
         super.viewDidLoad()
         self.title = vcTitle[ViewCtrl.Medal.rawValue]
         let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
+        let date = HZTDateLabel(fatherView: self.view)
     }
 
     override func didReceiveMemoryWarning() {

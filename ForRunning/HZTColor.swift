@@ -25,4 +25,7 @@ extension UIColor {
     class func tabBarColor() -> UIColor {
         return UIColor(red: 247.0/255.0, green: 112.0/255.0, blue: 112.0/255.0, alpha: 1.0)
     }
+    class func dateLabelColor() -> UIColor {
+        return UIColor(red: 253.0/255.0, green: 207/255.0, blue: 207/255.0, alpha: 1.0)
+    }
 }

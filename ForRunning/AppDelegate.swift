@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         
+        
         //init VCs
         let todayViewCtrl = TodayViewController()
         let totalViewCtrl = TotalViewController()

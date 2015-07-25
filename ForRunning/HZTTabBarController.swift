@@ -52,6 +52,7 @@ class HZTTabBarController: UITabBarController {
             self.tabBarIcon!.append(tabBarIcon)
 
         }
+       
         
         //attention:the tabBarBtn[] below is self.tabBarBtn[]; tabBarView is self.tabBarView tabBarTitle is self.tabBarTitle tabBarIcon is self.tabBarIcon
         //autolayout:TabBarBtn and TabBarTitl

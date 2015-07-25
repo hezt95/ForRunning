@@ -14,6 +14,7 @@ class TodayViewController: HZTGradientViewController {
         super.viewDidLoad()
         self.title = vcTitle[ViewCtrl.Today.rawValue]
         let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
+        let date = HZTDateLabel(fatherView: self.view)
         //Bezier
 //        var bezierContext = UIGraphicsGetCurrentContext()
 //        
