@@ -9,14 +9,14 @@
 import UIKit
 
 class HZTTitleLabel: UILabel {
-    init(fatherView: UIView, title: String){
+    init(parentView: UIView, title: String){
         //super init first(all 0)
         super.init(frame: CGRectMake(0, 0, 0, 0))
-        fatherView.addSubview(self)
+        parentView.addSubview(self)
         //autolayout
         self.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(fatherView).offset(35)
-            make.centerX.equalTo(fatherView)
+            make.top.equalTo(parentView).offset(35)
+            make.centerX.equalTo(parentView)
         }
         //set text
         self.text = title

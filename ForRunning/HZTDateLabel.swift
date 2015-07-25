@@ -10,12 +10,12 @@ import UIKit
 
 class HZTDateLabel: UILabel {
     
-    init(fatherView: UIView) {
+    init(parentView: UIView) {
         super.init(frame: CGRectMake(0, 0, 0, 0))
-        fatherView.addSubview(self)
+        parentView.addSubview(self)
         self.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(fatherView).offset(58)
-            make.centerX.equalTo(fatherView)
+            make.top.equalTo(parentView).offset(58)
+            make.centerX.equalTo(parentView)
         }
         
         let formatter = NSDateFormatter()

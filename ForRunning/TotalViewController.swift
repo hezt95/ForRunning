@@ -14,8 +14,8 @@ class TotalViewController: HZTGradientViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = vcTitle[ViewCtrl.Total.rawValue]
-        let titleLabel = HZTTitleLabel(fatherView: self.view, title: self.title!)
-        let date = HZTDateLabel(fatherView: self.view)
+        let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
+        let date = HZTDateLabel(parentView: self.view)
     }
 
     override func didReceiveMemoryWarning() {
