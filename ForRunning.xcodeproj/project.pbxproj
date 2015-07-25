@@ -12,7 +12,6 @@
 		B92213DA1B5F695500DC2044 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213D91B5F695500DC2044 /* TotalViewController.swift */; };
 		B92213DC1B5F696400DC2044 /* MedalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213DB1B5F696400DC2044 /* MedalViewController.swift */; };
 		B92213E41B5F76E200DC2044 /* HZTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */; };
-		B92213E61B5F892500DC2044 /* HZTGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213E51B5F892500DC2044 /* HZTGradientViewController.swift */; };
 		B92213EA1B5FB4CF00DC2044 /* HZTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213E91B5FB4CF00DC2044 /* HZTColor.swift */; };
 		B92213EC1B5FCF3700DC2044 /* HZTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92213EB1B5FCF3700DC2044 /* HZTTabBarController.swift */; };
 		B92465591B613B0500AAC8EB /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92465581B613B0500AAC8EB /* MeViewController.swift */; };
@@ -31,7 +30,6 @@
 		B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */; };
 		B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA271B637C20009903F0 /* HZTDateLabel.swift */; };
 		B98CAA2A1B63B321009903F0 /* HZTTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA291B63B321009903F0 /* HZTTabBarView.swift */; };
-		B98CAA2C1B63B382009903F0 /* HZTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA2B1B63B382009903F0 /* HZTGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +49,6 @@
 		B92213D91B5F695500DC2044 /* TotalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 		B92213DB1B5F696400DC2044 /* MedalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalViewController.swift; sourceTree = "<group>"; };
 		B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTitleLabel.swift; sourceTree = "<group>"; };
-		B92213E51B5F892500DC2044 /* HZTGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTGradientViewController.swift; sourceTree = "<group>"; };
 		B92213E91B5FB4CF00DC2044 /* HZTColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTColor.swift; sourceTree = "<group>"; };
 		B92213EB1B5FCF3700DC2044 /* HZTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarController.swift; sourceTree = "<group>"; };
 		B92465581B613B0500AAC8EB /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarButton.swift; sourceTree = "<group>"; };
 		B98CAA271B637C20009903F0 /* HZTDateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTDateLabel.swift; sourceTree = "<group>"; };
 		B98CAA291B63B321009903F0 /* HZTTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarView.swift; sourceTree = "<group>"; };
-		B98CAA2B1B63B382009903F0 /* HZTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTGradientView.swift; sourceTree = "<group>"; };
 		E1863FB779F0294E0097FA7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				B92213EB1B5FCF3700DC2044 /* HZTTabBarController.swift */,
-				B92213E51B5F892500DC2044 /* HZTGradientViewController.swift */,
 				B92213D71B5F68F600DC2044 /* TodayViewController.swift */,
 				B92213D91B5F695500DC2044 /* TotalViewController.swift */,
 				B92213DB1B5F696400DC2044 /* MedalViewController.swift */,
@@ -135,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				B98CAA291B63B321009903F0 /* HZTTabBarView.swift */,
-				B98CAA2B1B63B382009903F0 /* HZTGradientView.swift */,
 			);
 			name = "Views and Colors";
 			sourceTree = "<group>";
@@ -384,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */,
-				B98CAA2C1B63B382009903F0 /* HZTGradientView.swift in Sources */,
 				B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */,
 				B92465591B613B0500AAC8EB /* MeViewController.swift in Sources */,
 				B93F94631B4AAABC001F60DD /* AppDelegate.swift in Sources */,
@@ -392,7 +385,6 @@
 				B92213D81B5F68F600DC2044 /* TodayViewController.swift in Sources */,
 				B92213EC1B5FCF3700DC2044 /* HZTTabBarController.swift in Sources */,
 				B98CAA2A1B63B321009903F0 /* HZTTabBarView.swift in Sources */,
-				B92213E61B5F892500DC2044 /* HZTGradientViewController.swift in Sources */,
 				B92213E41B5F76E200DC2044 /* HZTTitleLabel.swift in Sources */,
 				B92213EA1B5FB4CF00DC2044 /* HZTColor.swift in Sources */,
 				B92213DA1B5F695500DC2044 /* TotalViewController.swift in Sources */,

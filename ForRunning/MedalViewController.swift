@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MedalViewController: HZTGradientViewController {
+class MedalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

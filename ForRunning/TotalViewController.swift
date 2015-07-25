@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class TotalViewController: HZTGradientViewController {
+class TotalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

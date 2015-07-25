@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MeViewController: HZTGradientViewController {
+class MeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
