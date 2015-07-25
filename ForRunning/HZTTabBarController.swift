@@ -138,7 +138,7 @@ class HZTTabBarController: UITabBarController {
             tabBarIcon![index] = UIImage(named: "\(vcTitle[index]).png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             tabBarTitle![index].text = "\(vcTitle[index])"
             
-            //setting TabBar's tint color
+            //setting defualt TabBar's tint color
             switch index {
             case 0:
                 tabBarBtn![index].tintColor = UIColor.tabBarSelectedColor()
@@ -157,9 +157,11 @@ class HZTTabBarController: UITabBarController {
             }
             tabBarBtn![index].setImage(tabBarIcon![index], forState: UIControlState.Selected)
             tabBarBtn![index].setImage(tabBarIcon![index], forState: UIControlState.Normal)
+            tabBarBtn![index].imageEdgeInsets = UIEdgeInsetsMake(0, 0, 10, 0)
+            tabBarBtn![index].clipsToBounds = false
+            tabBarBtn![index].contentMode = UIViewContentMode.ScaleAspectFill
             tabBarBtn![index].addTarget(self, action: Selector("touchTabBarBtn:"), forControlEvents: UIControlEvents.TouchDown)
             tabBarBtn![index].tag = index
-            
             //cancell the Highlighted of btn
             tabBarBtn![index].adjustsImageWhenHighlighted = false
             //setting tabBarTitle
