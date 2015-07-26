@@ -166,7 +166,7 @@ class HZTTabBarView: UIView, ChangeTabBarColorDelegate {
             tabBarBtn![index].adjustsImageWhenHighlighted = false
             //setting tabBarTitle
             tabBarTitle![index].textAlignment = NSTextAlignment.Center
-            tabBarTitle![index].font = UIFont(name: "Helvetica", size: 8)
+            tabBarTitle![index].font = UIFont(name: "Helvetica", size: 9)
             
         }
 
@@ -181,6 +181,16 @@ class HZTTabBarView: UIView, ChangeTabBarColorDelegate {
         tabBarBtn![index].tintColor = UIColor.tabBarSelectedColor()
         tabBarTitle![index].textColor = UIColor.tabBarSelectedColor()
         
+    }
+   
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        let context = UIGraphicsGetCurrentContext()
+        CGContextSetStrokeColorWithColor(context, UIColor.lineColor().CGColor)
+        CGContextSetLineWidth(context, 0.5)
+        CGContextMoveToPoint(context, self.bounds.origin.x, self.bounds.origin.y + 0.25)
+        CGContextAddLineToPoint(context, self.bounds.origin.x + self.bounds.width, self.bounds.origin.y + 0.25)
+        CGContextStrokePath(context)
     }
     
     required init(coder aDecoder: NSCoder) {

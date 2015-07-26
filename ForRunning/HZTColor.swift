@@ -28,4 +28,7 @@ extension UIColor {
     class func dateLabelColor() -> UIColor {
         return UIColor(red: 253.0/255.0, green: 207/255.0, blue: 207/255.0, alpha: 1.0)
     }
+    class func lineColor() -> UIColor {
+        return UIColor(red: 254.0/255.0, green: 170.0/255.0, blue: 170.0/255.0, alpha: 1.0)
+    }
 }
