@@ -12,9 +12,10 @@ class MeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        HZTBGGradientLayer.setLayer(self.view)
         self.title = vcTitle[ViewCtrl.Me.rawValue]
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
-        let date = HZTDateLabel(parentView: self.view)
+        let dateLabel = HZTDateLabel(parentView: self.view)
         // Do any additional setup after loading the view.
     }
 

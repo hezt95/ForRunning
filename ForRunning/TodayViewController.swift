@@ -12,10 +12,10 @@ import SnapKit
 class TodayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(self.view.frame)
+        HZTBGGradientLayer.setLayer(self.view)
         self.title = vcTitle[ViewCtrl.Today.rawValue]
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
-        let date = HZTDateLabel(parentView: self.view)
+        let dateLabel = HZTDateLabel(parentView: self.view)
         //Bezier
 //        var bezierContext = UIGraphicsGetCurrentContext()
 //        

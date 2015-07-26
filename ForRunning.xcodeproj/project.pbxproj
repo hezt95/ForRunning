@@ -30,6 +30,7 @@
 		B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */; };
 		B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA271B637C20009903F0 /* HZTDateLabel.swift */; };
 		B98CAA2A1B63B321009903F0 /* HZTTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA291B63B321009903F0 /* HZTTabBarView.swift */; };
+		B9AB3E2C1B64E0B700AF570D /* HZTBGGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarButton.swift; sourceTree = "<group>"; };
 		B98CAA271B637C20009903F0 /* HZTDateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTDateLabel.swift; sourceTree = "<group>"; };
 		B98CAA291B63B321009903F0 /* HZTTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarView.swift; sourceTree = "<group>"; };
+		B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTBGGradientLayer.swift; sourceTree = "<group>"; };
 		E1863FB779F0294E0097FA7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				B92213E91B5FB4CF00DC2044 /* HZTColor.swift */,
 				B98CAA271B637C20009903F0 /* HZTDateLabel.swift */,
 				B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */,
+				B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */,
+				B9AB3E2C1B64E0B700AF570D /* HZTBGGradientLayer.swift in Sources */,
 				B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */,
 				B92465591B613B0500AAC8EB /* MeViewController.swift in Sources */,
 				B93F94631B4AAABC001F60DD /* AppDelegate.swift in Sources */,

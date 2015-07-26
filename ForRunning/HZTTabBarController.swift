@@ -19,11 +19,26 @@ enum ViewCtrl: Int {
 
 class HZTTabBarController: UITabBarController {
     var changeColorDelegate: ChangeTabBarColorDelegate?
+    var gradientLayer: CAGradientLayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBar.hidden = true
-        changeColorDelegate = self.view as! HZTTabBarView
+        var tabBarView = HZTTabBarView(tabBarCtrl: self)
+        self.view.addSubview(tabBarView)
+        changeColorDelegate = tabBarView
+    }
+    
+    func touchTabBarBtn(button: HZTTabBarButton) {
+        selectedIndex = button.tag
+        for var index = 0; index < vcCounts ; index++ {
+            if index == selectedIndex {
+                changeColorDelegate?.changeToSelectedColor(index)
+            } else {
+                changeColorDelegate?.changeToNormalColor(index)
+            }
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,23 +46,9 @@ class HZTTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func loadView() {
-        self.view = HZTTabBarView(tabBarCtrl: self)
-    }
     
-    func touchTabBarBtn(button: HZTTabBarButton) {
-        println(self.selectedIndex)
-        selectedIndex = button.tag
-        println(self.selectedIndex)
-        for var index = 0; index < vcCounts; index++ {
-            if index == selectedIndex {
-                changeColorDelegate!.changeToSelectedColor(index)
-            } else {
-                changeColorDelegate!.changeToNormalColor(index)
-            }
-        }
-    }
 }
+
 
 protocol ChangeTabBarColorDelegate {
     func changeToSelectedColor(index: Int)
