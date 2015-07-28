@@ -16,6 +16,7 @@ class TodayViewController: UIViewController {
         self.title = vcTitle[ViewCtrl.Today.rawValue]
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
         let dateLabel = HZTDateLabel(parentView: self.view)
+        let lineView = HZTLineView(parentView: self.view)
         //Bezier
 //        var bezierContext = UIGraphicsGetCurrentContext()
 //        

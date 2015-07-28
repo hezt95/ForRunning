@@ -17,6 +17,7 @@ class TotalViewController: UIViewController {
         self.title = vcTitle[ViewCtrl.Total.rawValue]
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
         let dateLabel = HZTDateLabel(parentView: self.view)
+        let lineView = HZTLineView(parentView: self.view)
     }
 
     override func didReceiveMemoryWarning() {

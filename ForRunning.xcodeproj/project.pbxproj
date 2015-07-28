@@ -19,6 +19,7 @@
 		B93F946A1B4AAABC001F60DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93F94691B4AAABC001F60DD /* Images.xcassets */; };
 		B93F946D1B4AAABC001F60DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93F946B1B4AAABC001F60DD /* LaunchScreen.xib */; };
 		B93F94791B4AAABC001F60DD /* ForRunningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F94781B4AAABC001F60DD /* ForRunningTests.swift */; };
+		B940D3351B653C100004ADFF /* HZTLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B940D3341B653C100004ADFF /* HZTLineView.swift */; };
 		B95B92821B6239C10015BB80 /* Me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95B927E1B6239C10015BB80 /* Me@2x.png */; };
 		B95B92831B6239C10015BB80 /* Medal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95B927F1B6239C10015BB80 /* Medal@2x.png */; };
 		B95B92841B6239C10015BB80 /* Today@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95B92801B6239C10015BB80 /* Today@2x.png */; };
@@ -31,6 +32,7 @@
 		B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA271B637C20009903F0 /* HZTDateLabel.swift */; };
 		B98CAA2A1B63B321009903F0 /* HZTTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CAA291B63B321009903F0 /* HZTTabBarView.swift */; };
 		B9AB3E2C1B64E0B700AF570D /* HZTBGGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */; };
+		B9D45B381B67D60F00B11853 /* HZTRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D45B371B67D60F00B11853 /* HZTRoundCornerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		B93F94771B4AAABC001F60DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B93F94781B4AAABC001F60DD /* ForRunningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForRunningTests.swift; sourceTree = "<group>"; };
 		B93F94861B4AB53A001F60DD /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		B940D3341B653C100004ADFF /* HZTLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTLineView.swift; sourceTree = "<group>"; };
 		B95B927E1B6239C10015BB80 /* Me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Me@2x.png"; sourceTree = "<group>"; };
 		B95B927F1B6239C10015BB80 /* Medal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medal@2x.png"; sourceTree = "<group>"; };
 		B95B92801B6239C10015BB80 /* Today@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Today@2x.png"; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		B98CAA271B637C20009903F0 /* HZTDateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTDateLabel.swift; sourceTree = "<group>"; };
 		B98CAA291B63B321009903F0 /* HZTTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarView.swift; sourceTree = "<group>"; };
 		B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTBGGradientLayer.swift; sourceTree = "<group>"; };
+		B9D45B371B67D60F00B11853 /* HZTRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTRoundCornerButton.swift; sourceTree = "<group>"; };
 		E1863FB779F0294E0097FA7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 				B98CAA271B637C20009903F0 /* HZTDateLabel.swift */,
 				B92213E31B5F76E200DC2044 /* HZTTitleLabel.swift */,
 				B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */,
+				B9D45B371B67D60F00B11853 /* HZTRoundCornerButton.swift */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B98CAA291B63B321009903F0 /* HZTTabBarView.swift */,
+				B940D3341B653C100004ADFF /* HZTLineView.swift */,
 			);
 			name = "Views and Colors";
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			files = (
 				B95B92901B62522F0015BB80 /* HZTTabBarButton.swift in Sources */,
 				B9AB3E2C1B64E0B700AF570D /* HZTBGGradientLayer.swift in Sources */,
+				B9D45B381B67D60F00B11853 /* HZTRoundCornerButton.swift in Sources */,
 				B98CAA281B637C20009903F0 /* HZTDateLabel.swift in Sources */,
 				B92465591B613B0500AAC8EB /* MeViewController.swift in Sources */,
 				B93F94631B4AAABC001F60DD /* AppDelegate.swift in Sources */,
@@ -392,6 +399,7 @@
 				B92213E41B5F76E200DC2044 /* HZTTitleLabel.swift in Sources */,
 				B92213EA1B5FB4CF00DC2044 /* HZTColor.swift in Sources */,
 				B92213DA1B5F695500DC2044 /* TotalViewController.swift in Sources */,
+				B940D3351B653C100004ADFF /* HZTLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

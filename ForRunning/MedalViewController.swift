@@ -16,6 +16,7 @@ class MedalViewController: UIViewController {
         self.title = vcTitle[ViewCtrl.Medal.rawValue]
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
         let dateLabel = HZTDateLabel(parentView: self.view)
+        let lineView = HZTLineView(parentView: self.view)
     }
 
     override func didReceiveMemoryWarning() {

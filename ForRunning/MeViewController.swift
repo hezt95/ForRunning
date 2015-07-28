@@ -16,7 +16,7 @@ class MeViewController: UIViewController {
         self.title = vcTitle[ViewCtrl.Me.rawValue]
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
         let dateLabel = HZTDateLabel(parentView: self.view)
-        // Do any additional setup after loading the view.
+        let lineView = HZTLineView(parentView: self.view)
     }
 
     override func didReceiveMemoryWarning() {
