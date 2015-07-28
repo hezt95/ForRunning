@@ -22,7 +22,7 @@ class HZTRoundCornerButton: UIButton {
             make.width.equalTo(btnWidth)
         }
         self.setTitle(title, forState: UIControlState.Normal)
-        self.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 25)
+        self.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 25)
         println(self.frame.height)
         println(self.frame.size.height)
         self.layer.cornerRadius = CGFloat(btnHeight / 2)
