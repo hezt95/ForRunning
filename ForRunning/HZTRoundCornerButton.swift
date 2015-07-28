@@ -12,15 +12,22 @@ class HZTRoundCornerButton: UIButton {
     
     init(parentView: UIView, locationV: Double, title: String) {
         super.init(frame: CGRectMake(0, 0, 0, 0))
-        let btnHeight = 40
-        let btnWidth = 180
+        parentView.addSubview(self)
+        let btnHeight = 45
+        let btnWidth = parentView.frame.width - 60
         self.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(parentView).offset(locationV)
             make.centerX.equalTo(parentView)
             make.height.equalTo(btnHeight)
             make.width.equalTo(btnWidth)
         }
-        self.titleLabel?.text = title
+        self.setTitle(title, forState: UIControlState.Normal)
+        self.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 25)
+        println(self.frame.height)
+        println(self.frame.size.height)
+        self.layer.cornerRadius = CGFloat(btnHeight / 2)
+        self.layer.borderWidth = 1.5
+        self.layer.borderColor = UIColor.lineColor().CGColor
     }
 
     required init(coder aDecoder: NSCoder) {
