@@ -17,13 +17,7 @@ class TodayViewController: UIViewController {
         let titleLabel = HZTTitleLabel(parentView: self.view, title: self.title!)
         let dateLabel = HZTDateLabel(parentView: self.view)
         let lineView = HZTLineView(parentView: self.view)
-        //Bezier
-//        var bezierContext = UIGraphicsGetCurrentContext()
-//        
-//        CGContextSetRGBStrokeColor(bezierContext, 1, 1, 1, 1.0)
-//        CGContextSetLineWidth(bezierContext, 1.0)
-//        CGContextDrawPath(bezierContext, kCGPathStroke)
-//
+        let progressBarView = HZTRoundProgressBarView(parentView: self.view)
         
     }
     
