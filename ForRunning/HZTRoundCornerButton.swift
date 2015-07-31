@@ -29,7 +29,8 @@ class HZTRoundCornerButton: UIButton {
         self.layer.borderWidth = 1.5
         self.layer.borderColor = UIColor.lineColor().CGColor
     }
-
+   
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

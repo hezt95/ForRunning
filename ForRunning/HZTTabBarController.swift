@@ -10,12 +10,7 @@ import UIKit
 import SnapKit
 
 //the ViewControllers(in this TabBarController container)'s titles and counts
-let vcTitle = ["Today", "Total", "Medal", "Me"]
-let vcCounts = 4
-        
-enum ViewCtrl: Int {
-    case Today = 0, Total, Medal, Me
-}
+
 
 class HZTTabBarController: UITabBarController {
     var changeColorDelegate: ChangeTabBarColorDelegate?
