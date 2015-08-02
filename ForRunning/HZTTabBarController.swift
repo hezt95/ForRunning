@@ -9,8 +9,6 @@
 import UIKit
 import SnapKit
 
-//the ViewControllers(in this TabBarController container)'s titles and counts
-
 
 class HZTTabBarController: UITabBarController {
     var changeColorDelegate: ChangeTabBarColorDelegate?

@@ -10,7 +10,7 @@ import Foundation
 
 let vcTitle = ["Today", "Total", "Medal", "Me"]
 let vcCounts = 4
-
+let π = M_PI
 enum ViewCtrl: Int {
     case Today = 0, Total, Medal, Me
 }

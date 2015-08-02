@@ -79,7 +79,7 @@
 		B95B928F1B62522F0015BB80 /* HZTTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarButton.swift; sourceTree = "<group>"; };
 		B98CAA271B637C20009903F0 /* HZTDateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTDateLabel.swift; sourceTree = "<group>"; };
 		B98CAA291B63B321009903F0 /* HZTTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTTabBarView.swift; sourceTree = "<group>"; };
-		B99154001B6B6E21005870DE /* HZTConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTConstant.swift; sourceTree = "<group>"; };
+		B99154001B6B6E21005870DE /* HZTConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HZTConstant.swift; path = ../HZTConstant.swift; sourceTree = "<group>"; };
 		B9AB3E2B1B64E0B700AF570D /* HZTBGGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTBGGradientLayer.swift; sourceTree = "<group>"; };
 		B9D45B371B67D60F00B11853 /* HZTRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTRoundCornerButton.swift; sourceTree = "<group>"; };
 		E1863FB779F0294E0097FA7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +151,6 @@
 		B93F94541B4AAABC001F60DD = {
 			isa = PBXGroup;
 			children = (
-				B99154001B6B6E21005870DE /* HZTConstant.swift */,
 				B93F945F1B4AAABC001F60DD /* ForRunning */,
 				B93F94751B4AAABC001F60DD /* ForRunningTests */,
 				B93F945E1B4AAABC001F60DD /* Products */,
@@ -172,6 +171,7 @@
 		B93F945F1B4AAABC001F60DD /* ForRunning */ = {
 			isa = PBXGroup;
 			children = (
+				B99154001B6B6E21005870DE /* HZTConstant.swift */,
 				B93F94621B4AAABC001F60DD /* AppDelegate.swift */,
 				B92195031B63B838005930E4 /* Others */,
 				B92213E01B5F6B4B00DC2044 /* Views and Colors */,
