@@ -22,6 +22,7 @@ class HZTRoundProgressBarView: UIView {
             make.centerX.equalTo(parentView.snp_centerX)
         }
         self.backgroundColor = UIColor.lineColor()
+        println(self.frame)
         self.setupColorLayer()
         self.setupColorMaskLayer()
         self.setupBGColorMaskLayer()
