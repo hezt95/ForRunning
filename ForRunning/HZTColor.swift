@@ -31,4 +31,10 @@ extension UIColor {
     class func lineColor() -> UIColor {
         return UIColor(red: 254.0/255.0, green: 170.0/255.0, blue: 170.0/255.0, alpha: 1.0)
     }
+    class func roundCornerBtnBorderColor() -> UIColor {
+        return UIColor(red: 247.0/255.0, green: 142.0/255.0, blue: 142.0/255.0, alpha: 1.0)
+    }
+    class func roundCornerBtnColor() -> UIColor {
+        return UIColor(red: 237.0/255.0, green: 86.0/255.0, blue: 86.0/255.0, alpha: 1.0)
+    }
 }

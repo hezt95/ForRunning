@@ -27,7 +27,8 @@ class HZTRoundCornerButton: UIButton {
         println(self.frame.size.height)
         self.layer.cornerRadius = CGFloat(btnHeight / 2)
         self.layer.borderWidth = 1.5
-        self.layer.borderColor = UIColor.lineColor().CGColor
+        self.layer.borderColor = UIColor.roundCornerBtnBorderColor().CGColor
+        self.backgroundColor = UIColor.roundCornerBtnColor()
     }
    
     

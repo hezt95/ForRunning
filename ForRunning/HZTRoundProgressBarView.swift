@@ -12,18 +12,16 @@ class HZTRoundProgressBarView: UIView {
     var colorLayer: CAShapeLayer?
     var colorMaskLayer: CAShapeLayer?
     var backgroundColorMaskLayer: CAShapeLayer?
-    init(parentView: UIView){
+    init(basedOn frame: CGRect){
         let horizenOffset = CGFloat(30)
-        let sideLength = parentView.frame.width - horizenOffset * 2
+        let sideLength = frame.width - horizenOffset * 2
         super.init(frame: CGRectMake(horizenOffset, 100, sideLength, sideLength))
-        parentView.addSubview(self)
         self.backgroundColor = UIColor.lineColor()
         self.setupColorLayer()
         self.setupColorMaskLayer()
         self.setupBGColorMaskLayer()
         self.colorMaskLayer!.strokeEnd = 0.005
     }
-    
     
     func setupColorLayer() {
         colorLayer = CAShapeLayer()
@@ -47,7 +45,7 @@ class HZTRoundProgressBarView: UIView {
         let roundLineWidth = 20
         let layer = CAShapeLayer()
         layer.frame = self.bounds
-        let path = UIBezierPath(arcCenter: CGPointMake(self.frame.width / 2, self.frame.height / 2), radius: self.frame.width / 2 - CGFloat(roundLineWidth) / 2, startAngle: CGFloat(1.525 * π), endAngle: CGFloat(3.5 * π), clockwise: true)
+        let path = UIBezierPath(arcCenter: CGPointMake(self.frame.width / 2, self.frame.height / 2), radius: self.frame.width / 2 - CGFloat(roundLineWidth) / 2, startAngle: CGFloat(1.525 * π), endAngle: CGFloat(3.525 * π), clockwise: true)
         layer.lineWidth = CGFloat(roundLineWidth)
         layer.path = path.CGPath
         layer.fillColor = UIColor.clearColor().CGColor
@@ -69,6 +67,7 @@ class HZTRoundProgressBarView: UIView {
         self.layer.mask = layer
         self.backgroundColorMaskLayer = layer
     }
+    
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
